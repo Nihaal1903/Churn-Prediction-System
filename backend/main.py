@@ -21,7 +21,7 @@ create_tables()
 # CORS (Vite runs on 5173)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://churn-prediction-system.vercel.app/"],  # change later to frontend URL
+    allow_origins=["https://churn-prediction-system.vercel.app/","http://localhost:5173"],  # change later to frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
